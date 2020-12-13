@@ -1,4 +1,5 @@
 package step3;
+import java.util.Scanner;
 
 public class Step3 {
     char[] alpha = {'B', 'W', 'O', 'G', 'Y', 'R'};
@@ -30,8 +31,20 @@ public class Step3 {
         }
     }
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Step3 s = new Step3();
+
         s.savecube();
         s.printcube();
+
+        while (true){
+            System.out.print("CUBE> ");
+            String input = scanner.nextLine();
+
+            if(input.equals("Q")){
+                System.out.println("이용해주셔서 감사합니다.");
+                break;
+            }
+        }
     }
 }
