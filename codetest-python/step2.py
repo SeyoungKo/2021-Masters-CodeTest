@@ -49,7 +49,7 @@ def horizontal_transfer(num, idx):
 # 큐브 초기 상태
 print_cube()
 while True:
-    # 사용자 입력
+# 사용자 입력
     input_str = input('CUBE > ')
     idx = 0
 
